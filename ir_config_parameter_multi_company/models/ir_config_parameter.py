@@ -85,6 +85,7 @@ class IrConfigParameter(models.Model):
             cr.execute("SELECT key,value_old FROM ir_config_parameter WHERE id = %s", (r.id, ))
             res = cr.dictfetchone()
             value_old = res.get('value_old')
-            r._create_default_value(value_old)
+            if value_old:
+                r._create_default_value(value_old)
         # Finally, remove the _old column if all went well so we won't run this every time we upgrade the module.
         cr.execute("ALTER TABLE ir_config_parameter DROP COLUMN value_old")
