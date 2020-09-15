@@ -15,7 +15,7 @@ class FleetVehicle(models.Model):
         return res
 
 
-    odometer = fields.Float(compute="_get_odometer", fnct_inv=_set_odometer, string='Last Odometer'
+    odometer = fields.Float(compute="_get_odometer", fnct_inv=_set_odometer, string='Last Odometer',
                                     help='Odometer measure of the vehicle at the moment of this log',
                                     track_visibility='onchange'),
 

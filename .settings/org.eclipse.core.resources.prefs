@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//fleet_odometer_track_changes/fleet.py=utf-8
+encoding//ir_config_parameter_multi_company/migrations/10.0.2.0.0/post-prepare-value-column.py=utf-8
+encoding//ir_config_parameter_multi_company/migrations/10.0.2.0.0/pre-prepare-value-column.py=utf-8
+encoding//ir_config_parameter_multi_company/models/ir_config_parameter.py=utf-8
+encoding//ir_config_parameter_multi_company/models/ir_property.py=utf-8
+encoding//ir_config_parameter_multi_company/models/res_users.py=utf-8
